@@ -1,0 +1,43 @@
+/** GLOBALES **/
+
+/* Contenedor de la web de 1200 px centrado */
+.contenedor {  
+  max-width: 1200px;
+  margin: 0 auto 0 auto;  /* 0 arriba y abajo, auto en izda y dcha. Posible atajo: 0 auto */
+}
+
+/* Header */
+.site-header.inicio {
+    background: url(../img/header.jpg);
+    
+    height: 100vh; /* La altura de la imagen será del 100% del 'viewport height'. 
+      De este modo, se mide la altura de la pantalla en la que se va a mostrar la
+      imagen y se toma esta altura como 100%' */
+    min-height: 600px;  /* Como mínimo la imagen medirá 600px, así si la pantalla es
+      demasiado pequeña se garantiza que se vea lo que hay en la imagen */
+    
+    background-position: center center; /* Hace que el centro de la imagen quede
+      en el centro de la porción de pantalla en la que se muestre la imagen*/
+    background-size: cover;   /* Hace que se vea siempre la imagen completa en su
+      porción de pantalla respetando las proporciones de la propia imagen y cubriendo
+      el máximo posible. Tiene un buen comportamiento al redimensionar la ventana */
+}
+
+.barra {
+  display: flex;  /* Usamos flexbox para ubicar el logo y los enlaces del navegador */
+  justify-content: space-between;  /* Deja un espacio en medio de los elementos */
+  align-items: center; /* Alineamos verticalmente ambos elementos */
+  padding-top: 20px;  
+}
+
+/* Enlaces de navegación*/
+.navegacion a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.navegacion a:hover {
+  color: #71b100;
+}
