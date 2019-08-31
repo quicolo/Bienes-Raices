@@ -10,6 +10,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
+  line-height: 2;
 }
 
 h1 {
@@ -24,6 +25,20 @@ h3 {
 h4 {
   font-size: 2.6rem;
 }
+
+/* Utilidades */
+.seccion {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.centrar-texto {
+  text-align: center;
+ }
 
 
 /* Contenedor de la web de 1200 px centrado */
@@ -79,4 +94,21 @@ h4 {
 
 .navegacion a:hover {
   color: #70b100;
+}
+
+/* Seccion Nosotros */ 
+.iconos-nosotros {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icono {
+  /* Es como el width de un elemento afectado por Flex. Lo calculamos dinámicamente con
+     calc y a 1/3 le quitamos 1rem (10px) para separar un elemento de su contiguo. */
+  flex-basis: calc(33.3% - 1rem); 
+  text-align: center;
+}
+
+.icono h3 {
+  text-transform: uppercase;
 }
