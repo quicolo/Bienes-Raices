@@ -12,11 +12,26 @@ body {
   font-size: 1.6rem;
 }
 
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 3.4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.6rem;
+}
+
+
 /* Contenedor de la web de 1200 px centrado */
 .contenedor {  
   max-width: 120rem;
   margin: 0 auto 0 auto;  /* 0 arriba y abajo, auto en izda y dcha. Posible atajo: 0 auto */
 }
+
 
 /* Header */
 .site-header.inicio {
@@ -33,6 +48,18 @@ body {
     background-size: cover;   /* Hace que se vea siempre la imagen completa en su
       porción de pantalla respetando las proporciones de la propia imagen y cubriendo
       el máximo posible. Tiene un buen comportamiento al redimensionar la ventana */
+}
+
+.contenido-header {
+  display: flex;  /* Afectará a .barra y al h1 */
+  flex-direction: column; 
+  height: 100%; /* Para que la columna llegue hasta abajo de la imagen del header */
+  justify-content: space-between;  /* Barra arriba y h1 abajo */
+}
+
+.contenido-header h1 {
+  color: white;
+  padding-bottom: 3rem;
 }
 
 .barra {
